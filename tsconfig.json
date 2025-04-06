@@ -14,10 +14,10 @@
     "incremental": true,
     "skipLibCheck": true
   },
-  "include": ["*.js"],
+  "include": ["*.ts"],
   "exclude": [
     "node_modules",
-    "**/*.spec.js",
-    "**/*.test.js"
+    "**/*.spec.ts",
+    "**/*.test.ts"
   ]
 }
