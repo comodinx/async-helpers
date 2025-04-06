@@ -1,0 +1,33 @@
+{
+  "name": "@comodinx/async-helpers",
+  "version": "0.0.1",
+  "description": "@comodinx/promise-helpers is a module for optimize promise usage.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "clean:types": "tsc --build --clean --emitDeclarationOnly .",
+    "build:types": "tsc -d --declarationDir . --emitDeclarationOnly --allowJs",
+    "test": "NODE_ENV=test node --test *.test.js *.spec.js"
+  },
+  "homepage": "https://github.com/comodinx/async-helpers#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/comodinx/async-helpers.git"
+  },
+  "author": "Milo Molina Developer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/comodinx/async-helpers/issues"
+  },
+  "keywords": [
+    "async",
+    "helpers",
+    "promises",
+    "pLimit",
+    "comodinx"
+  ],
+  "devDependencies": {
+    "tsc": "^2.0.4",
+    "typescript": "^5.8.3"
+  }
+}
