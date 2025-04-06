@@ -1,10 +1,16 @@
+export declare class QueueNode {
+    value: any;
+    next: QueueNode | undefined;
+    constructor(value: any);
+}
 export default class Queue {
+    #private;
+    constructor();
     enqueue(value: any): void;
     dequeue(): any;
     peek(): any;
     clear(): void;
-    get size(): any;
-    drain(): Generator<any, void, unknown>;
+    get size(): number;
     [Symbol.iterator](): Generator<any, void, unknown>;
-    #private;
+    drain(): Generator<any, void, unknown>;
 }

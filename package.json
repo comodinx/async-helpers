@@ -1,12 +1,13 @@
 {
   "name": "@comodinx/async-helpers",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "@comodinx/async-helpers is a module for optimize async usage.",
   "main": "./index.js",
   "types": "./index.d.ts",
   "scripts": {
-    "clean:types": "npx tsc --build --clean . && rm -rf *.d.ts",
-    "build:types": "npm run clean:types && tsc --noEmit --pretty",
+    "build": "tsc -p .",
+    "clean:types": "tsc --build --clean . && rm -rf *.d.ts",
+    "build:types": "tsc -d --declarationDir . --emitDeclarationOnly --pretty -p .",
     "test": "NODE_ENV=test tsx --test *.test.ts *.spec.ts"
   },
   "homepage": "https://github.com/comodinx/async-helpers#readme",
@@ -27,7 +28,6 @@
     "comodinx"
   ],
   "devDependencies": {
-    "tsc": "^2.0.4",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3"
   }
