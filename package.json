@@ -5,7 +5,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "clean:types": "tsc --build --clean --emitDeclarationOnly .",
+    "clean:types": "tsc --build --clean --emitDeclarationOnly . && rm -rf *.d.ts",
     "build:types": "tsc -d --declarationDir . --emitDeclarationOnly --allowJs",
     "test": "NODE_ENV=test node --test *.test.js *.spec.js"
   },
