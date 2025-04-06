@@ -1,6 +1,6 @@
 {
   "name": "@comodinx/async-helpers",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "@comodinx/async-helpers is a module for optimize async usage.",
   "main": "index.js",
   "types": "index.d.ts",
